@@ -154,22 +154,12 @@ export function isTouchEvent(event) {
   );
 }
 
-export function getEdgeOffset(node, parent, offset = {left: 0, top: 0}) {
+export function getEdgeOffset(node) {
   if (!node) {
     return undefined;
   }
 
-  // Get the actual offsetTop / offsetLeft value, no matter how deep the node is nested
-  const nodeOffset = {
-    left: offset.left + node.offsetLeft,
-    top: offset.top + node.offsetTop,
-  };
-
-  if (node.parentNode === parent) {
-    return nodeOffset;
-  }
-
-  return getEdgeOffset(node.parentNode, parent, nodeOffset);
+  return node.getBoundingClientRect();
 }
 
 export function getTargetIndex(newIndex, prevIndex, oldIndex) {
