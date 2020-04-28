@@ -1,9 +1,9 @@
 {
-  "name": "react-sortable-hoc",
-  "version": "1.11.0",
+  "name": "alcumus-react-sortable-hoc",
+  "version": "1.11.1",
   "description": "Set of higher-order components to turn any list into a sortable, touch-friendly, animated list",
   "author": {
-    "name": "Clauderic Demers",
+    "name": "Clauderic Demers/Mike Talbot",
     "email": "me@ced.io"
   },
   "user": "clauderic",
