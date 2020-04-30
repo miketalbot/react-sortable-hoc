@@ -1,6 +1,6 @@
 {
   "name": "alcumus-react-sortable-hoc",
-  "version": "1.11.2",
+  "version": "1.11.3",
   "description": "Set of higher-order components to turn any list into a sortable, touch-friendly, animated list",
   "author": {
     "name": "Clauderic Demers/Mike Talbot",
@@ -36,6 +36,7 @@
   "scripts": {
     "start": "start-storybook -p 9001 -c .storybook",
     "build": "rollup -c",
+    "watch": "rollup -w -c",
     "test": "eslint src/** --ext .js --quiet",
     "release": "standard-version --no-verify"
   },
